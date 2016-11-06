@@ -24,11 +24,39 @@
  
 //其實只要輸入 `pip install gcoin` 再按 `tab` 即可
  
-## 安裝 Postman 
+## Api教學
 
-去下列網址下載
-> https://app.getpostman.com/app/download/win64
+進入網站：[request maker](http://requestmaker.com/)
 
-安裝 Postman
+####一般寫法
+
+格式
+>http://52.198.247.0:8000/<指令>/<變數>
+
+example
+>http://52.198.247.0:8000/base/v1/balance/13zYswW4SV31SynXXM8dwEkyMnu5A2XUmJ
+
+###GET 參數寫法寫法
+
+格式
+>http://52.198.247.0:8000/<指令>?<變數>=<數值>&<變數>=<數值>&<變數>=<數值>
+
+example
+>http://52.198.247.0:8000/base/v1/license/prepare?color_id=249166&address=13zYswW4SV31SynXXM8dwEkyMnu5A2XUmJ&name=戴睿頡&description=TA
+
+###POST 寫法
+
+格式
+>http://52.198.247.0:8000/<指令>/
+>
+>然後在Request Data填入 : <變數>=<數值>
+
+example
+>http://52.198.247.0:8000/base/v1/transaction/send
+>
+>Request data:
+>
+>raw_tx=0100000001000000000000000000000000000000000000000000000000
+
 
 
